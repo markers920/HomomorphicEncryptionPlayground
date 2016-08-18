@@ -1,0 +1,18 @@
+
+pulled orig HElib from https://github.com/shaih/HElib
+
+gmp wouldnt install initially
+sudo apt-get install m4
+
+didnt have g++ installed
+sudo apt-get install g++
+
+in the makefile for HE, 
+line 21, comment out (If you get compilation errors, try to add/remove -std=c++11) in Makefile
+
+dd -lrt at the end of line 56, to include the timing lib
+
+
+
+
+
